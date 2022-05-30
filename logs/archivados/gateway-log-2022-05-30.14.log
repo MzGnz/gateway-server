@@ -1,0 +1,159 @@
+2022-05-30 12:01:23,677 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Completed shut down of DiscoveryClient
+2022-05-30 12:01:23,688 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-30 12:01:23,700 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2022-05-30 12:01:23,707 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$2 [Thread-6] Flushing remaining spans on shutdown
+2022-05-30 12:01:33,152 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-05-30 12:01:33,158 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting GatewayServerApplication using Java 17.0.2 on MacBook-Pro-de-Javier.local with PID 3577 (/Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/GatewayServer/target/classes started by javieralejandrocalixtocano in /Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/GatewayServer)
+2022-05-30 12:01:33,158 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-05-30 12:01:33,181 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-30 12:01:33,181 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-30 12:01:33,690 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5d871b01-14f3-3b2d-b305-0dc54730a9ef
+2022-05-30 12:01:33,827 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:01:33,830 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:01:33,833 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:01:34,450 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [After]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Before]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Between]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Cookie]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Header]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Host]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Method]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Path]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Query]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [ReadBody]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [RemoteAddr]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Weight]
+2022-05-30 12:01:34,451 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-05-30 12:01:35,672 WARN org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration [restartedMain] Check result of the [WebClientSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: WebClientSender{http://localhost:9411/api/v2/spans} check() timed out after 1000ms}]
+2022-05-30 12:01:35,825 ERROR io.netty.resolver.dns.DnsServerAddressStreamProviders [WebClientSender{http://localhost:9411/api/v2/spans} check()] Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:479)
+	at reactor.netty.tcp.TcpResources.getOrCreateDefaultResolver(TcpResources.java:315)
+	at reactor.netty.http.HttpResources.getOrCreateDefaultResolver(HttpResources.java:139)
+	at reactor.netty.http.client.HttpClientConfig.defaultAddressResolverGroup(HttpClientConfig.java:382)
+	at reactor.netty.transport.ClientTransportConfig.resolverInternal(ClientTransportConfig.java:224)
+	at reactor.netty.http.client.HttpClientConfig.resolverInternal(HttpClientConfig.java:436)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:264)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:77)
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:271)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4515)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4232)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.post(WebClientSender.java:41)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:36)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.check(HttpSender.java:123)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.check(WebClientSender.java:33)
+	at org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1.run(ZipkinAutoConfiguration.java:103)
+Caused by: java.lang.UnsatisfiedLinkError: 'io.netty.resolver.dns.macos.DnsResolver[] io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers()'
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers(Native Method)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.retrieveCurrentMappings(MacOSDnsServerAddressStreamProvider.java:127)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:123)
+	... 30 common frames omitted
+2022-05-30 12:01:35,895 ERROR reactor.util.Loggers$Slf4JLogger [reactor-http-nio-2] Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/127.0.0.1:9411; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:9411
+Caused by: org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/127.0.0.1:9411; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:225)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:274)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:415)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491)
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299)
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:190)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:194)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:304)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:194)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:154)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:477)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:401)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:194)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:536)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.Operators.error(Operators.java:198)
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:517)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:471)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:206)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:9411
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-30 12:01:35,938 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729

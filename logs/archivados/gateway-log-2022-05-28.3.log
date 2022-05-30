@@ -1,0 +1,37 @@
+2022-05-28 00:32:28,788 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [ReadBody]
+2022-05-28 00:32:28,788 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [RemoteAddr]
+2022-05-28 00:32:28,788 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-05-28 00:32:28,788 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Weight]
+2022-05-28 00:32:28,788 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-05-28 00:32:28,817 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-28 00:32:28,820 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-28 00:32:28,835 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-28 00:32:28,845 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-28 00:32:28,852 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-28 00:32:28,852 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-28 00:32:28,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-28 00:32:28,864 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-28 00:32:28,866 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-28 00:32:28,868 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-28 00:32:28,872 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1653715948872 with initial instances count: 3
+2022-05-28 00:32:28,872 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application API-GATEWAY-SERVER with eureka with status UP
+2022-05-28 00:32:28,872 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1653715948872, current=UP, previous=STARTING]
+2022-05-28 00:32:28,872 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090: registering service...
+2022-05-28 00:32:28,878 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - registration status: 204
+2022-05-28 00:32:28,883 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [restartedMain] Netty started on port 8090
+2022-05-28 00:32:28,886 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8090
+2022-05-28 00:32:28,892 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started GatewayServerApplication in 0.55 seconds (JVM running for 1964.759)
+2022-05-28 00:32:28,893 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-05-28 00:37:28,862 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-28 00:42:28,859 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-28 00:44:49,360 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(61)-127.0.0.1] Application shutdown requested.
+2022-05-28 00:44:49,361 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(61)-127.0.0.1] Unregistering application API-GATEWAY-SERVER with eureka with status DOWN
+2022-05-28 00:44:49,361 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(61)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1653716689361, current=DOWN, previous=UP]
+2022-05-28 00:44:49,362 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090: registering service...
+2022-05-28 00:44:49,366 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - registration status: 204

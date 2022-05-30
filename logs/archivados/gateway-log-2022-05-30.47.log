@@ -1,0 +1,46 @@
+2022-05-30 12:36:57,468 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-30 12:36:57,471 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-30 12:36:57,477 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1653932217477 with initial instances count: 1
+2022-05-30 12:36:57,483 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application API-GATEWAY-SERVER with eureka with status UP
+2022-05-30 12:36:57,483 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1653932217483, current=UP, previous=STARTING]
+2022-05-30 12:36:57,484 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090: registering service...
+2022-05-30 12:36:57,511 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - registration status: 204
+2022-05-30 12:36:57,513 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+2022-05-30 12:36:58,530 WARN zipkin2.reporter.AsyncReporter$BoundedAsyncReporter [restartedMain] Timed out waiting for in-flight spans to send
+2022-05-30 12:37:00,627 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Shutting down DiscoveryClient ...
+2022-05-30 12:37:03,642 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Unregistering ...
+2022-05-30 12:37:03,654 INFO com.netflix.discovery.DiscoveryClient [restartedMain] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - deregister  status: 200
+2022-05-30 12:37:03,688 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Completed shut down of DiscoveryClient
+2022-05-30 12:37:03,698 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-30 12:37:03,708 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2022-05-30 12:37:03,713 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$2 [Thread-6] Flushing remaining spans on shutdown
+2022-05-30 12:37:28,229 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-05-30 12:37:28,235 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting GatewayServerApplication using Java 17.0.2 on MacBook-Pro-de-Javier.local with PID 4581 (/Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/GatewayServer/target/classes started by javieralejandrocalixtocano in /Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/GatewayServer)
+2022-05-30 12:37:28,235 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-05-30 12:37:28,259 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-30 12:37:28,259 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-30 12:37:28,888 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5d871b01-14f3-3b2d-b305-0dc54730a9ef
+2022-05-30 12:37:29,048 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:37:29,051 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:37:29,054 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:37:29,710 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [After]
+2022-05-30 12:37:29,711 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Before]
+2022-05-30 12:37:29,711 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Between]
+2022-05-30 12:37:29,711 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Cookie]
+2022-05-30 12:37:29,711 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Header]
+2022-05-30 12:37:29,711 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [restartedMain] Loaded RoutePredicateFactory [Host]

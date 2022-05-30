@@ -1,0 +1,46 @@
+2022-05-30 12:02:44,045 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-30 12:02:44,157 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-30 12:02:44,209 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-30 12:02:44,231 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-30 12:02:44,233 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-30 12:02:44,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-30 12:02:44,425 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-30 12:02:44,428 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-30 12:02:44,432 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-30 12:02:44,438 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1653930164437 with initial instances count: 1
+2022-05-30 12:02:44,444 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application API-GATEWAY-SERVER with eureka with status UP
+2022-05-30 12:02:44,444 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1653930164444, current=UP, previous=STARTING]
+2022-05-30 12:02:44,445 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090: registering service...
+2022-05-30 12:02:44,466 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - registration status: 204
+2022-05-30 12:02:44,471 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [restartedMain] Netty started on port 8090
+2022-05-30 12:02:44,472 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8090
+2022-05-30 12:02:44,488 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started GatewayServerApplication in 3.386 seconds (JVM running for 3.855)
+2022-05-30 12:03:40,094 ERROR org.springframework.core.log.CompositeLog [reactor-http-nio-5] [54ac8377-1]  500 Server Error for HTTP GET "/api-gateway/api/v1/rest-tarjetas/tarjeta/asignarTarjeta/Shooping/7000/19"
+io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.100.35:50769
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api-gateway/api/v1/rest-tarjetas/tarjeta/asignarTarjeta/Shooping/7000/19" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+		at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+		at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-30 12:07:44,251 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-30 12:09:00,135 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(16)-127.0.0.1] Application shutdown requested.
+2022-05-30 12:09:00,137 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(16)-127.0.0.1] Unregistering application API-GATEWAY-SERVER with eureka with status DOWN
+2022-05-30 12:09:00,137 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(16)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1653930540137, current=DOWN, previous=UP]

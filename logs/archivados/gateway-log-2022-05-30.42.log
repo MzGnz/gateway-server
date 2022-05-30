@@ -1,0 +1,36 @@
+2022-05-30 12:26:53,050 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=3d7cd89b-ac42-38e8-bdea-41a7eb391e5b
+2022-05-30 12:26:53,556 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:26:53,574 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:26:53,587 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-30 12:26:56,972 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [After]
+2022-05-30 12:26:56,974 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Before]
+2022-05-30 12:26:56,974 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Between]
+2022-05-30 12:26:56,974 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Cookie]
+2022-05-30 12:26:56,974 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Header]
+2022-05-30 12:26:56,974 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Host]
+2022-05-30 12:26:56,975 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Method]
+2022-05-30 12:26:56,975 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Path]
+2022-05-30 12:26:56,975 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Query]
+2022-05-30 12:26:56,976 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [ReadBody]
+2022-05-30 12:26:56,976 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [RemoteAddr]
+2022-05-30 12:26:56,977 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-05-30 12:26:56,977 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Weight]
+2022-05-30 12:26:56,977 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-05-30 12:26:58,981 WARN org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration [main] Check result of the [WebClientSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: WebClientSender{http://localhost:9411/api/v2/spans} check() timed out after 1000ms}]
+2022-05-30 12:26:59,774 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-05-30 12:27:00,215 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-30 12:27:00,351 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-05-30 12:27:00,430 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-05-30 12:27:00,435 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-05-30 12:27:00,455 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-05-30 12:27:00,456 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-05-30 12:27:00,457 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-05-30 12:27:00,457 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-05-30 12:27:00,457 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-05-30 12:27:00,457 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-05-30 12:27:00,457 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-05-30 12:27:00,929 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-05-30 12:27:00,936 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-05-30 12:27:00,940 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-30 12:27:00,956 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1653931620955 with initial instances count: 1
+2022-05-30 12:27:01,046 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application API-GATEWAY-SERVER with eureka with status UP

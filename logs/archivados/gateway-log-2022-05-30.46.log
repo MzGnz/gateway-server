@@ -1,0 +1,52 @@
+2022-05-30 12:36:56,767 WARN org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration [restartedMain] Check result of the [WebClientSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: WebClientSender{http://localhost:9411/api/v2/spans} check() timed out after 1000ms}]
+2022-05-30 12:36:56,945 ERROR io.netty.resolver.dns.DnsServerAddressStreamProviders [WebClientSender{http://localhost:9411/api/v2/spans} check()] Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:479)
+	at reactor.netty.tcp.TcpResources.getOrCreateDefaultResolver(TcpResources.java:315)
+	at reactor.netty.http.HttpResources.getOrCreateDefaultResolver(HttpResources.java:139)
+	at reactor.netty.http.client.HttpClientConfig.defaultAddressResolverGroup(HttpClientConfig.java:382)
+	at reactor.netty.transport.ClientTransportConfig.resolverInternal(ClientTransportConfig.java:224)
+	at reactor.netty.http.client.HttpClientConfig.resolverInternal(HttpClientConfig.java:436)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:264)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:77)
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:271)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4515)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4232)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.post(WebClientSender.java:41)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.lambda$new$0(WebClientSender.java:36)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.check(HttpSender.java:123)
+	at org.springframework.cloud.sleuth.zipkin2.WebClientSender.check(WebClientSender.java:33)
+	at org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1.run(ZipkinAutoConfiguration.java:103)
+Caused by: java.lang.UnsatisfiedLinkError: 'io.netty.resolver.dns.macos.DnsResolver[] io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers()'
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers(Native Method)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.retrieveCurrentMappings(MacOSDnsServerAddressStreamProvider.java:127)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:123)
+	... 30 common frames omitted
+2022-05-30 12:36:57,043 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-30 12:36:57,062 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-30 12:36:57,182 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-30 12:36:57,245 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-30 12:36:57,270 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-30 12:36:57,273 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-30 12:36:57,286 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-30 12:36:57,465 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200

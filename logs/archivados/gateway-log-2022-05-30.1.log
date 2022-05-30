@@ -1,0 +1,38 @@
+2022-05-30 11:38:17,278 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Header]
+2022-05-30 11:38:17,279 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Host]
+2022-05-30 11:38:17,279 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Method]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Path]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Query]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [ReadBody]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [RemoteAddr]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [Weight]
+2022-05-30 11:38:17,280 INFO org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator [main] Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-05-30 11:38:19,250 WARN org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration [main] Check result of the [WebClientSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: WebClientSender{http://localhost:9411/api/v2/spans} check() timed out after 1000ms}]
+2022-05-30 11:38:20,107 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-05-30 11:38:20,556 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-30 11:38:20,705 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-05-30 11:38:20,802 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-05-30 11:38:20,806 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-05-30 11:38:20,827 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-05-30 11:38:20,828 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-05-30 11:38:20,828 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-05-30 11:38:20,828 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-05-30 11:38:20,828 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-05-30 11:38:20,829 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-05-30 11:38:20,829 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-05-30 11:38:21,361 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-05-30 11:38:21,370 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-05-30 11:38:21,374 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-30 11:38:21,386 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1653928701384 with initial instances count: 1
+2022-05-30 11:38:21,448 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application API-GATEWAY-SERVER with eureka with status UP
+2022-05-30 11:38:21,448 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1653928701448, current=UP, previous=STARTING]
+2022-05-30 11:38:21,450 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090: registering service...
+2022-05-30 11:38:21,617 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - registration status: 204
+2022-05-30 11:38:21,817 INFO org.springframework.boot.StartupInfoLogger [main] Started GatewayServerApplicationTests in 11.432 seconds (JVM running for 12.816)
+2022-05-30 11:38:22,213 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$2 [Thread-4] Flushing remaining spans on shutdown
+2022-05-30 11:38:22,217 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application API-GATEWAY-SERVER with eureka with status DOWN
+2022-05-30 11:38:22,218 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1653928702218, current=DOWN, previous=UP]
+2022-05-30 11:38:22,218 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090: registering service...
+2022-05-30 11:38:22,236 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_API-GATEWAY-SERVER/192.168.100.35:api-gateway-server:8090 - registration status: 204
+2022-05-30 11:38:25,366 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
